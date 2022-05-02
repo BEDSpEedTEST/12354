@@ -1,0 +1,599 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+.sidebar{
+    position: fixed;
+    left: -300px;
+    width: 150px;
+    height: 100%; 
+    background: rgb(24 61 89);
+    transition: all .5s ease;
+}
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    padding:10px;
+    background: rgb(24 61 89);
+    user-select: none;
+}
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(82, 80, 80);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+ul li:hover a {
+    padding-left: 65px;
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: rgb(82, 80, 80);
+    border-radius: 3px;
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: #ffffff;
+    padding: 6px 12px;
+    transition: all .5s;
+
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left: 250;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 170px;
+}
+#cancel:hover{
+    color: rgb(223, 79, 79);
+}
+#btn:hover{
+    color: rgb(48, 148, 48);
+}
+#set{
+text-align: center;
+padding: 35px;
+font-family: Verdana;
+font-size: 40px;
+line-height:30px;
+color: rgb(255, 255, 255);
+}
+
+#f{
+        text-align: center;
+        padding: 18px;
+        font-family: Verdana;
+        font-size: 34px;
+        line-height:50px;
+        color: rgb(255, 255, 255);
+    
+}
+#f:hover {
+color: rgb(0, 0, 0);
+}
+
+
+#p1:hover{
+    color: rgb(0, 0, 0);
+}
+body{
+    background-color: rgb(62, 74, 85);
+}
+#p1{
+    text-align: center;
+    padding: 18px;
+    font-family: Verdana;
+    font-size: 34px;
+    line-height:60px;
+    font-weight: normal;  
+    color: rgb(255, 255, 255);
+}
+@media only screen and (max-width:390px) {
+    #audio{
+
+        margin-top: 15px;
+        width: 330px;
+    }
+
+    #p1{
+        text-align: center;
+        padding: 18px;
+        font-family: Verdana;
+        font-size: 34px;
+        line-height:60px;
+        color: rgb(255, 255, 255);
+        }
+        body{
+            background-color: rgb(62, 74, 85);
+        }
+        #buttontimeeq{
+   
+            color: black;
+            width: 300px;
+            border-radius: 8px;
+            background-color: rgb(65, 104, 150);
+            border: 10px;
+            font-size: 30px;
+            margin-top:15px;
+            margin-bottom:12px;
+            padding: 10px;
+        }
+        #buttontimeeq:hover { 
+            color: white;
+            background-color:#868788;
+            transition: all .5s; 
+            font-weight: bold;
+            font-size: 34px;
+        }
+        #buttontimee{
+
+       
+                color: black;
+                width: 300px;
+                border-radius: 8px;
+                background-color: rgb(65, 104, 150);
+                border: 10px;
+                font-size: 30px;
+                margin-top:15px;
+                margin-bottom:12px;
+                padding: 10px;
+            }
+            #buttontimee:hover { 
+                color: white;
+                background-color:#868788;
+                transition: all .5s; 
+                font-weight: bold;
+                font-size: 34px;
+            }
+        #buttontimeew{
+            
+        
+                color: black;
+                width: 300px;
+                border-radius: 8px;
+                background-color: rgb(65, 104, 150);
+                border: 10px;
+                font-size: 30px;
+                margin-top:15px;
+                margin-bottom:12px;
+                padding: 10px;
+            }
+            #buttontimeew:hover { 
+                color: white;
+                background-color:#868788;
+                transition: all .5s; 
+            font-weight: bold;
+            font-size: 34px;
+            }
+}
+@media only screen and (max-width:425px) {
+    #audio{
+
+        margin-top: 15px;
+        width: 330px;
+    }
+
+    #p1{
+        text-align: center;
+        padding: 18px;
+        font-family: Verdana;
+        font-size: 34px;
+        line-height:60px;
+        color: rgb(255, 255, 255);
+        }
+        body{
+            background-color: rgb(62, 74, 85);
+        }
+        #buttontimeeq{
+
+            color: black;
+            width: 300px;
+            border-radius: 8px;
+            background-color: rgb(65, 104, 150);
+            border: 10px;
+            font-size: 30px;
+            margin-top:15px;
+            margin-bottom:12px;
+            padding: 10px;
+        }
+        #buttontimeeq:hover { 
+            color: white;
+            background-color:#868788;
+            transition: all .5s; 
+            font-weight: bold;
+            font-size: 34px;
+        }
+        #buttontimee{
+
+        
+                color: black;
+                width: 300px;
+                border-radius: 8px;
+                background-color: rgb(65, 104, 150);
+                border: 10px;
+                font-size: 30px;
+                margin-top:15px;
+                margin-bottom:12px;
+                padding: 10px;
+            }
+            #buttontimee:hover { 
+                color: white;
+                background-color:#868788;
+                transition: all .5s; 
+                font-weight: bold;
+                font-size: 34px;
+            }
+        #buttontimeew{
+            
+   
+                color: black;
+                width: 300px;
+                border-radius: 8px;
+                background-color: rgb(65, 104, 150);
+                border: 10px;
+                font-size: 30px;
+                margin-top:15px;
+                margin-bottom:12px;
+                padding: 10px;
+            }
+            #buttontimeew:hover { 
+                color: white;
+                background-color:#868788;
+                transition: all .5s; 
+                font-weight: bold;
+                font-size: 34px;
+            }
+}
+@media only screen and (max-width:768px) {
+    #audio{
+
+        margin-top: 15px;
+        width: 330px;
+    }
+
+    #p1{
+        text-align: center;
+        padding: 18px;
+        font-family: Verdana;
+        font-size: 34px;
+        line-height:60px;
+        color: rgb(255, 255, 255);
+        }
+        body{
+            background-color: rgb(62, 74, 85);
+        }
+        #buttontimeeq{
+
+            color: black;
+            width: 300px;
+            border-radius: 8px;
+            background-color: rgb(65, 104, 150);
+            border: 10px;
+            font-size: 30px;
+            margin-top:15px;
+            margin-bottom:12px;
+            padding: 10px;
+        }
+        #buttontimeeq:hover { 
+            color: white;
+            background-color:#868788;
+            transition: all .5s; 
+            font-weight: bold;
+            font-size: 34px;
+        }
+        #buttontimee{
+
+
+                color: black;
+                width: 300px;
+                border-radius: 8px;
+                background-color: rgb(65, 104, 150);
+                border: 10px;
+                font-size: 30px;
+                margin-top:15px;
+                margin-bottom:12px;
+                padding: 10px;
+            }
+            #buttontimee:hover { 
+                color: white;
+                background-color:#868788;
+                transition: all .5s; 
+                font-weight: bold;
+                font-size: 34px;
+            }
+        #buttontimeew{
+            
+
+                color: black;
+                width: 300px;
+                border-radius: 8px;
+                background-color: rgb(65, 104, 150);
+                border: 10px;
+                font-size: 30px;
+                margin-top:15px;
+                margin-bottom:12px;
+                padding: 10px;
+            }
+            #buttontimeew:hover { 
+                color: white;
+                background-color:#868788;
+                transition: all .5s; 
+                font-weight: bold;
+                font-size: 34px;
+            }
+}
+@media only screen and (max-width:992px) {
+    #audio{
+
+        margin-top: 15px;
+        width: 330px;
+    }
+    #p1{
+        text-align: center;
+        padding: 18px;
+        font-family: Verdana;
+        font-size: 34px;
+        line-height:60px;
+        color: rgb(255, 255, 255);
+        }
+        body{
+            background-color: rgb(62, 74, 85);
+        }
+        #buttontimeeq{
+
+            color: black;
+            width: 300px;
+            border-radius: 8px;
+            background-color: rgb(65, 104, 150);
+            border: 10px;
+            font-size: 30px;
+            margin-top:15px;
+            margin-bottom:12px;
+            padding: 10px;
+        }
+        #buttontimeeq:hover { 
+            color: white;
+            background-color:#868788;
+            transition: all .5s; 
+            font-weight: bold;
+            font-size: 34px;
+        }
+        #buttontimee{
+
+ 
+                color: black;
+                width: 300px;
+                border-radius: 8px;
+                background-color: rgb(65, 104, 150);
+                border: 10px;
+                font-size: 30px;
+                margin-top:15px;
+                margin-bottom:12px;
+                padding: 10px;
+            }
+            #buttontimee:hover { 
+                color: white;
+                background-color:#868788;
+                transition: all .5s; 
+                font-weight: bold;
+                font-size: 34px;
+            }
+        #buttontimeew{
+            
+
+                color: black;
+                width: 300px;
+                border-radius: 8px;
+                background-color: rgb(65, 104, 150);
+                border: 10px;
+                font-size: 30px;
+                margin-top:15px;
+                margin-bottom:12px;
+                padding: 10px;
+            }
+            #buttontimeew:hover { 
+                color: white;
+                background-color:#868788;
+                transition: all .5s; 
+                font-weight: bold;
+                font-size: 34px;
+            }
+}
+@media only screen and (max-width:1200px) {
+
+    #p1{
+        text-align: center;
+        padding: 18px;
+        font-family: Verdana;
+        font-size: 34px;
+        line-height:60px;
+        color: rgb(255, 255, 255);
+        }
+        body{
+            background-color: rgb(62, 74, 85);
+        }
+        #buttontimeeq{
+
+            color: black;
+            width: 300px;
+            border-radius: 8px;
+            background-color: rgb(65, 104, 150);
+            border: 10px;
+            font-size: 30px;
+            margin-top:15px;
+            margin-bottom:12px;
+            padding: 10px;
+        }
+        #buttontimeeq:hover { 
+            color: white;
+            background-color:#868788;
+            transition: all .5s; 
+            font-weight: bold;
+            font-size: 34px;
+        }
+        #buttontimee{
+
+
+                color: black;
+                width: 300px;
+                border-radius: 8px;
+                background-color: rgb(65, 104, 150);
+                border: 10px;
+                font-size: 30px;
+                margin-top:15px;
+                margin-bottom:12px;
+                padding: 10px;
+            }
+            #buttontimee:hover { 
+                color: white;
+                background-color:#868788;
+                transition: all .5s; 
+                font-weight: bold;
+                font-size: 34px;
+            }
+        #buttontimeew{
+            
+
+                color: black;
+                width: 300px;
+                border-radius: 8px;
+                background-color: rgb(65, 104, 150);
+                border: 10px;
+                font-size: 30px;
+                margin-top:15px;
+                margin-bottom:12px;
+                padding: 10px;
+            }
+            #buttontimeew:hover { 
+                color: white;
+                background-color:#868788;
+                transition: all .5s; 
+                font-weight: bold;
+                font-size: 34px;
+            }
+        
+}
+#buttontimeeq{
+    position: relative;
+    top: 299px;
+    color: black;
+    width: 300px;
+    border-radius: 8px;
+    background-color: rgb(65, 104, 150);
+    border: 10px;
+    font-size: 30px;
+    margin-top:15px;
+    margin-bottom:12px;
+    padding: 10px;
+}
+#buttontimeeq:hover { 
+    color: white;
+    background-color:#868788;
+    transition: all .5s; 
+    font-weight: bold;
+    font-size: 34px;
+}
+#buttontimee{
+
+    position: relative;
+    top: 299px;
+        color: black;
+        width: 300px;
+        border-radius: 8px;
+        background-color: rgb(65, 104, 150);
+        border: 10px;
+        font-size: 30px;
+        margin-top:15px;
+        margin-bottom:12px;
+        padding: 10px;
+    }
+    #buttontimee:hover { 
+        color: white;
+        background-color:#868788;
+        transition: all .5s; 
+        font-weight: bold;
+        font-size: 34px;
+    }
+#buttontimeew{
+        position: relative;
+        top: 299px;
+        color: black;
+        width: 300px;
+        border-radius: 8px;
+        background-color: rgb(65, 104, 150);
+        border: 10px;
+        font-size: 30px;
+        margin-top:15px;
+        margin-bottom:12px;
+        padding: 10px;
+    }
+    #buttontimeew:hover { 
+        color: white;
+        background-color:#868788;
+        transition: all .5s; 
+        font-weight: bold;
+        font-size: 34px;
+    }
+#buttontime {
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color: black;
+    text-align: center;
+    width: 300px;
+    border-radius: 8px;
+    background-color: rgb(65, 104, 150);
+    border: 10px;
+    font-size: 30px;
+    margin-bottom:12px;
+    
+}
+#buttontime:hover { 
+    color: white;
+    background-color:#868788;
+    transition: all .5s; 
+    font-weight: bold;
+    font-size: 34px;
+
+}
+
+
+
+
+
+
